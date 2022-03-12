@@ -1,0 +1,9 @@
+https://docs.newrelic.com/docs/apm/agents/python-agent/installation/install-python-agent-docker/
+
+https://www.section.io/engineering-education/django-docker/
+docker build --tag enomoto/django_todo:latest .
+docker push enomoto/django_todo:latest
+docker run --name django_todo -d -p 8000:8000 enomoto/django_todo:latest
+
+http://127.0.0.1:8000/admin/
+
